@@ -1,14 +1,18 @@
-import { Link } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
-function Nav() {
-    return(
-        <nav>
+function Nav(){
 
-            <Link to="/">Home</Link>|
-            <Link to="/form">Form</Link>|
-            <Link to="/users">Users</Link>
-        </nav>
-    )
+
+return(
+<div>
+<nav>
+<Link to="/">Home</Link>|<Link to="/form">form</Link>|<Link to="/users">User</Link>
+</nav>
+<hr/>
+<Outlet/>
+</div>
+)
+
 }
 
 export default Nav
